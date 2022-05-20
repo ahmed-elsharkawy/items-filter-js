@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>images-filter</title>
+</head>
+<body>
+    
+    <h1 class="text-center m-4">Images Filter</h1>
+
+    <div class="container">
+        <section class="Our-Work my-4 py-5 text-center">
+            <h2 class="text-light mx-auto pt-5 pb-3">OUR LATEST WORKS</h2>
+            <div class="our-work-control w-100 m-auto pt-3">
+                <button onclick="displayItems('all')" class="btn text-white py-1 px-4 m-2 bg-info" id="allItems">All</button>
+                <button onclick="displayItems('car')" class="btn text-white py-1 px-4 m-2" id="cars">Cars</button>
+                <button onclick="displayItems('plane')" class="btn text-white py-0 py-1 px-4 m-2" id="plane">Plane</button>
+                <button onclick="displayItems('city')" class="btn text-white py-0 py-1 px-4 m-2" id="city">City</button>
+                <button onclick="displayItems('nature')" class="btn text-white py-0 py-1 px-4 m-2" id="nature">Nature</button>
+            </div>
+            <div class="container-lg">
+                <div id="itemsContainer" class="row text-left my-5 pt-2">
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
